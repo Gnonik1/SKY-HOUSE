@@ -21,9 +21,345 @@ a {
   text-decoration: none;
 }
 
-/* header and main */
+.container {
+  width: 100%;
+} 
+
+header.container { 
+  background: #0a22f4;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-flex {
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+nav {
+  display: none;
+}
 
 #logo {
+  max-width: 97px;
+  height: 55px;
+  background-color: transparent;
+  margin-top: 40px;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+#main-photo {
+  width: 100%;;
+  margin: -35px auto 16px;
+  border-radius: 15px;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#h1 {
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  font-weight: 700;
+  color: #171717;
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 250px;
+}
+
+.gallery img:last-child {
+  display: none;
+}
+
+main .text {
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #171717;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+main .text:nth-of-type(2),
+main .text:nth-of-type(3) {
+  display: none;
+}
+
+.more {
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 28px;
+  background-color: #0a22f4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer.container {
+  background-color: #0a22f4;
+  padding: 30px 20px 40px;
+}
+
+footer .grid {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .text {
+  display: none;
+}
+
+
+.contact h2 {
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 40px;
+  order: 1;
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 44px;
+  margin-top: 40px;
+  order: 3;
+}
+
+.collect {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 35px;
+  order: 4;
+  width: 100%;
+}
+
+.contact {
+  display: contents;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+.icon {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+}
+
+.icon-out {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  order: 2;
+}
+
+.input label {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.input input,
+.input textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #ffffff;
+  outline: none;
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.input input::placeholder,
+.input textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.input textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+.input button {
+  width: 100%;
+  border: none;
+  border-radius: 28px;
+  background-color: #ffffff;
+  color: #171717;
+  font-family: "DejaVu Sans Condensed Bold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px;
+  cursor: pointer;
+}
+
+footer + .grid {
+  background-color: #0a22f4;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.right {
+  order: 2;
+  font-family: "DejaVu Sans Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 31.50px;
+}
+
+.last {
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 34.5px;
+}
+
+.text1 {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: 17.81px;
+  font-family: "DejaVu Sans Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.text1 img {
+  width: 19.69px;
+  height: 16.62px;
+}
+
+.smartweb {
+  order: 2;
+  width: 121px;
+  height: auto;
+}
+
+.choose-png {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#toggle {
+  display: none;
+}
+
+.choose-btn {
+  cursor: pointer;
+  order: 3;
+}
+
+.toggle-content {
+  display: none;
+  text-align: left;
+  color: white;
+  order: 4;
+}
+
+.toggle-content a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#toggle:checked ~ .toggle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -20px;
+  align-items: center;
+}
+
+.toggle-content a:hover {
+  opacity: 0.7;
+}
+
+
+/* header and main */
+
+/* #logo {
   max-width: 115px;
   height: 65px;
   background-color: transparent;
@@ -162,15 +498,15 @@ header a {
 
 /* footer */
 
-.container {
+/* .container {
   max-width: 1920px;
   /* height: 1080px; */
   height: 100%;
   margin: auto;
-  background-color: #0a22f4;
-}
+  /* background-color: #0a22f4;
+} */
 
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
@@ -186,7 +522,7 @@ header a {
   align-items: flex-start;
   text-align: left;
   /* flex-wrap: wrap; ნაკლებ სქროლს იწვევს, რომ ვაუქმებ */
-  flex-direction: column;
+  /* flex-direction: column;
   max-width: 720px;
   height: 800px;
   gap: 20px;
@@ -263,9 +599,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
+} */
 
-label {
+/* label {
   font-family: "DejaVu Sans Condensed", sans-serif;
   display: flex;
   flex-direction: column;
@@ -297,10 +633,10 @@ input[type="email"] {
   width: 100%;
   /* border: 1px solid #0a22f4;
   background-color: #0a22f4; */
-  margin-bottom: 20px;
-}
+  /* margin-bottom: 20px;
+} */
 
-input,
+/* input,
 textarea {
   border: none;
   border-bottom: 3px solid #ffffff;
@@ -332,9 +668,9 @@ button {
   text-transform: uppercase;
   padding: 18px 45px 18px 36px;
   font-weight: 700;
-}
+} */ */
 
-.right {
+/* .right {
   font-family: "DejaVu Sans Condensed", sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -349,9 +685,9 @@ button {
   max-width: 121px;
   height: 35px;
   background-color: transparent;
-}
+} */
 
-.last {
+/* .last {
   font-family: "DejaVu Sans Condensed", sans-serif;
   font-size: 13px;
   color: #ffffff;
@@ -366,4 +702,4 @@ button {
   padding-bottom: 40px;
   max-width: 1440px;
   gap: 30px;
-}
+} */ 
