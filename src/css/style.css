@@ -551,10 +551,10 @@ footer + .grid {
   }
 
   footer + .grid {
-    width: 100%;
+    width: 1920px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 132px 0 42px;
+    padding: 132px 0px 42px;
     margin: 0 auto;
   }
 
