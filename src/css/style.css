@@ -556,6 +556,7 @@ footer + .grid {
     flex-direction: row;
     justify-content: space-between;
     padding: 132px 0 42px;
+    margin: 0 auto;
   }
 
   .right {
