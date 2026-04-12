@@ -484,10 +484,10 @@ footer + .grid {
     margin: 0 auto;
     /* padding: 0 40px 60px; */
     display: grid;
-    grid-template-columns: 1fr 463px;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 80px;
+    gap: 200px;
   }
 
   .contact {
@@ -523,7 +523,7 @@ footer + .grid {
   }
 
   .collect {
-    gap: 98px;
+    gap: 40px;
   }
 
   .contact-link {
@@ -542,7 +542,7 @@ footer + .grid {
 
   .input {
     padding-top: 90px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
   }
 
   .input label {
