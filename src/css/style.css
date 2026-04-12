@@ -476,7 +476,7 @@ footer + .grid {
   }
 
   footer.container {
-    padding: 275px 0 0;
+    padding: 275px 40px 0px;
   }
 
   footer .grid {
@@ -542,6 +542,7 @@ footer + .grid {
 
   .input {
     padding-top: 90px;
+    padding-right: 40px;
   }
 
   .input label {
